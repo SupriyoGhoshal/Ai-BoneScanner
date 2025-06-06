@@ -5,9 +5,9 @@ const router = express.Router();
 
 // Register Route
 router.post("/register", async (req, res) => {
-    const { name, email, password, age, gender } = req.body;
+    const { firstname, lastname, email, password, age, gender } = req.body;
     try {
-        if (!name || !email || !password || !age || !gender) {
+        if (!firstname ||  !lastname || !email || !password || !age || !gender) {
             return res.status(400).json({ error: "All fields are required." });
         }
         const userExists = await User.findOne({ email });
@@ -15,7 +15,8 @@ router.post("/register", async (req, res) => {
             return res.status(409).json({ error: "User already exists with this email." });
         }
         const newUser = new User({
-            name,
+            firstname,
+            lastname,
             email,
             password,
             age,
