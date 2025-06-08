@@ -14,7 +14,8 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarModern">
             <ul className="navbar-nav ms-auto align-items-center">
               <li className="nav-item">
-                <a className="nav-link active" href="#home">Home</a>
+                
+                 <Link className="nav-link active" to="/#">Home</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/about">About</Link>
@@ -24,9 +25,6 @@ function Navbar() {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#summary">Summary</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#contact">Contact</a>
               </li>
               <li className="nav-item">
                 <Link to="/register" className="btn get-started-btn ms-3">Get Started</Link>
