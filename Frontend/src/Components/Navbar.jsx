@@ -4,29 +4,26 @@ import {Link} from "react-router-dom"
 function Navbar() {
     return ( 
         <>
-          <nav class="navbar navbar-expand-lg navbar-gradient sticky-top shadow-sm">
-  <div class="container">
-    <a class="navbar-brand logo-text" href="#">🦴 NutriBone</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarModern">
-      <span class="navbar-toggler-icon"></span>
+          <nav className="navbar navbar-expand-lg navbar-gradient sticky-top shadow-sm">
+  <div className="container">
+    <a className="navbar-brand logo-text" href="#">🦴 NutriBone</a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarModern">
+      <span className="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarModern">
-      <ul class="navbar-nav ms-auto align-items-center">
-        <li class="nav-item">
-          <a class="nav-link active" href="#home">Home</a>
+    <div className="collapse navbar-collapse" id="navbarModern">
+      <ul className="navbar-nav ms-auto align-items-center">
+        <li className="nav-item">
+          <Link className="nav-link active" to="/#">Home</Link>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
+        <li className="nav-item">
+          <Link className="nav-link" to="/about">About</Link>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#scan">Scan</a>
+        <li className="nav-item">
+          <a className="nav-link" href="#scan">Scan</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#summary">Summary</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
+        <li className="nav-item">
+          <a className="nav-link" href="#summary">Summary</a>
         </li>
         <li class="nav-item">
           <Link to="/register" class="btn get-started-btn ms-3">Get Started</Link>

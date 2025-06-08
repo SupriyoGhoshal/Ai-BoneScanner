@@ -57,6 +57,16 @@ function Footer() {
                             </ul>
                         </div>
 
+                        
+                        {/* Contact Section */}
+                        <div className="col-md-3 mb-4">
+                            <h5 className="text-uppercase mb-3 fw-bold text-primary">Contact</h5>
+                            <p className="mb-1"><i className="fas fa-envelope me-2"></i>nutribone@gmail.com</p>
+                            <p className="mb-1"><i className="fas fa-phone me-2"></i> +91 6294769803</p>
+                            <p className="mb-1"><i className="fas fa-map-marker-alt me-2"></i> West Bengal, India</p>
+                        </div>
+                    </div>
+
                         {/* Social Media Section */}
                         <div className="col-md-4 mb-4">
                             <h5 className="text-uppercase mb-3 fw-bold text-primary">Follow Us</h5>
@@ -81,7 +91,7 @@ function Footer() {
                             &copy; {new Date().getFullYear()} All Rights Reserved
                         </small>
                     </div>
-                </div>
+           
             </footer>
         </>
     );
