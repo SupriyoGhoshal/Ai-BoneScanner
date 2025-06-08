@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import { useNavigate, Link } from "react-router-dom";
 
 function Signup() {
   const [firstname, setFirstName] = useState("");
@@ -55,6 +56,7 @@ function Signup() {
     setGenderErr(!genderRegex.test(value) ? "Gender must be Male, Female, or Other" : "");
   };
 
+  const navigate = useNavigate();
   // Form submit
   const handleSignup = async (e) => {
     e.preventDefault();
@@ -89,6 +91,8 @@ function Signup() {
       setPassword("");
       setAge("");
       setGender("");
+
+      navigate("/login");
     } catch (err) {
       console.error("❌ Registration failed:", err.response?.data || err.message);
       alert("Registration failed. Please try again.");
