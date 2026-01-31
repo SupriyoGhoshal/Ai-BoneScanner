@@ -91,8 +91,6 @@ Not intended for real-world medical diagnosis
 
 🌱 Future Improvements
 
-Integration of deep learning models for medical imaging
-
 Training on larger and diverse datasets
 
 Improved explainability for medical professionals
